@@ -1,0 +1,49 @@
+data_dir: "/path/to/dataset"
+model: CafMamba
+dataset: lmvd
+train: false
+epochs: 80
+batch_size: 16
+learning_rate: 1e-4
+save_dir: "/path/to/save/results"
+device:
+  - "cuda"
+
+# Mamba parameters
+
+cafmamba_lmvd:
+  audio_input_size: 128
+  video_egh_input_size: 294
+  video_lau_input_size: 171
+  mm_input_size: 256
+  mm_output_sizes: [256]
+  dropout: 0.1
+
+  mamba_config:
+    d_state: 16
+    expand: 4
+    d_conv: 4
+
+cafmambabi_lmvd:
+  audio_input_size: 128
+  video_input_size: 136
+  mm_input_size: 256
+  mm_output_sizes: [256]
+  dropout: 0.1
+
+  mamba_config:
+    d_state: 16
+    expand: 4
+    d_conv: 4
+
+cafmambabi_dvlog:
+  audio_input_size: 25
+  video_input_size: 136
+  mm_input_size: 256
+  mm_output_sizes: [256]
+  dropout: 0.1
+
+  mamba_config:
+    d_state: 12
+    expand: 4
+    d_conv: 4
