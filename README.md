@@ -45,7 +45,7 @@ pip install mamba-ssm==1.2.0.post1
 We conduct experiments on two publicly available multimodal depression detection datasets:
 - Large-Scale Multimodal Vlog Dataset (LMVD)\
  [https://github.com/helang818/LMVD?tab=readme-ov-file](https://github.com/helang818/LMVD?tab=readme-ov-file)
-- Depression Vlog Dataset (D-Vlog)
+- Depression Vlog Dataset (D-Vlog)\
  [https://sites.google.com/view/jeewoo-yoon/dataset](https://sites.google.com/view/jeewoo-yoon/dataset)
 
 ### 2. References
