@@ -166,7 +166,7 @@ class CafMamba(BaseNet):
     This class implements the CAF-Mamba model for multimodal features.
 
     Args:
-        audio_input_size (int): The input size of audio features, which is 161 for LMVD dataset.
+        audio_input_size (int): The input size of audio features, which is 128 for LMVD dataset.
         video_egh_input_size (int): The input size of eye-gaze-head features, which is 280+8+6 for LMVD dataset.
         video_lau_input_size (int): The input size of facial landmarks + Action Units features, which is 136+35 for LMVD dataset.
         mm_input_size (int): The input size of the multimodal features. Default is 256.
@@ -181,7 +181,7 @@ class CafMamba(BaseNet):
 
     def __init__(
         self,
-        audio_input_size=161,
+        audio_input_size=128,
         video_egh_input_size=294,
         video_lau_input_size=171,
         mm_input_size=256,
@@ -230,7 +230,7 @@ class CafMamba(BaseNet):
         nn.init.xavier_uniform_(self.conv_video_egh.weight.data)
 
     def feature_extractor(self, x, padding_mask=None):
-        xa = x[:, :, 465:]  # 161 dims, audio features in LMVD
+        xa = x[:, :, 465:]  # 128 dims, audio features in LMVD
         xv_egh = x[:, :, :294]  # 294 dims, eye-gaze-head features in LMVD
         xv_lau = x[:, :, 294:465]  # 171 dims, facial landmarks + AUs in LMVD
 
