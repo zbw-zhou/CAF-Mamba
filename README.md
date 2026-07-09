@@ -81,15 +81,16 @@ $ python main.py --train --if_wandb --epochs 80 --batch_size 16 --learning_rate 
 
 If you find this work useful in your research, please consider citing our paper:
 ```bibtex
-@misc{zhou2026cafmambamambabasedcrossmodaladaptive,
-      title={CAF-Mamba: Mamba-Based Cross-Modal Adaptive Attention Fusion for Multimodal Depression Detection}, 
-      author={Bowen Zhou and Marc-André Fiedler and Ayoub Al-Hamadi},
-      year={2026},
-      eprint={2601.21648},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2601.21648}, 
-}
+@INPROCEEDINGS{11465117,
+  author={Zhou, Bowen and Fiedler, Marc-André and Al-Hamadi, Ayoub},
+  booktitle={ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={CAF-Mamba: Mamba-based cross-modal Adaptive Attention Fusion for Multimodal Depression Detection}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={12107-12111},
+  keywords={Feeds;Videos;LoRa;Video equipment;Protocols;Telecommunications;Radio communication;HTTP;Ambient intelligence;Data communication;Adaptive attention;cross-modal;depression detection;mamba;multimodal fusion},
+  doi={10.1109/ICASSP55912.2026.11465117}}
 ```
 
 ---
